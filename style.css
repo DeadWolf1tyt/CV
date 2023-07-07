@@ -1,4 +1,7 @@
-
+html {
+	scroll-behavior: smooth; 
+	/*определяет прокрутку блока, smooth(плавное), auto(резкое)*/
+}
 body {
 	background-color: #b5a789;
 	margin: 0px;
@@ -7,13 +10,22 @@ body {
 pre {
 	padding: 0px 200px 0px 0px;
 	margin: 15px 0px 0px 0px;
+	transition-duration: 1s;
+}
+pre:hover {
+	font-size: 16px;
+	font-weight: 700;
 }
 #area {
 	width: 800px;
 	padding: 20px;
 	background-color: #675c47;
+	color: #646363;
 	margin-left: auto;
 	margin-right: auto;
+	margin-top: 15px;
+	margin-bottom: 50px;
+	box-shadow: 0 35px 55px rgb(0 0 0);
 }
 ul {
 	list-style: none;
@@ -40,23 +52,22 @@ ul#nav li {
 header,nav,main {
 	margin: 15px 0px;
 	border-radius: 3px;
+	background-color: #efe5d0;
 }
 nav {
 	padding: 5px;
 }
 footer#footer div {
 	display: inline;
+	color: #000;
 }
 .year {
 	font-size: 20px;
-}
-header,main,nav {
-	background-color: #efe5d0;
 }
 .img {
 	border-radius: 80px 10px;
 	transition-duration: 1s;
 }
 .img:hover {
-	width: 600px;
+	width: 490px;
 }
